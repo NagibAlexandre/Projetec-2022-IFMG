@@ -6,8 +6,8 @@ Site = Flask(__name__)
 def SiteIndex():
     return render_template('index.html')
 
-# Esse código é para quando for rodar no Replit
+# Quando rodar por meio de sites (Replit por exemplo)
 #app.run(host='0.0.0.0', debug=True)
 
-# Esse código é para quando for rodar em sua máquina
+# Quando rodar por meio da própria máquina (VsCode, PyCharm etc)
 Site.run(debug=True)
