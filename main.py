@@ -4,10 +4,10 @@ Site = Flask(__name__)
 
 @Site.route('/')
 def SiteIndex():
-    return render_template('index.html')
+    return render_template('index.html',Titulo = 'IndexPlaceholder')
 
-# Quando rodar por meio de sites (Replit por exemplo)
+# Esse código é para quando for rodar no Replit
 #app.run(host='0.0.0.0', debug=True)
 
-# Quando rodar por meio da própria máquina (VsCode, PyCharm etc)
+# Esse código é para quando for rodar em sua máquina
 Site.run(debug=True)
