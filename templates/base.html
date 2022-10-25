@@ -1,25 +1,54 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-
     <meta charset="UTF-8">
+    
+    
     <link rel="stylesheet" href="/static/stylesheets/estilo_base.css">
-
+    <link rel="icon" href="/static/images/tab_icon.png">
     <title>{{ Titulo }}</title>
-
-    <header class="header_index">
-        <img src="/static/images/Logotipo.png" alt="Logo">
-        <h1>Live Center</h1>
-        <div class="barra_pesquisa"><input class ="barra" type="text" placeholder="Pesquisar."><input type="image" src="/static/images/lupa_ico.png" class="btt_submit"></div>
-        <input type="image" src="/static/images/placeholder_user_Ico.png" class="btt_user">
-    </header>
-
 </head>
 
 <body>
 
-</body>
+    <header class="header_index">
+        <a href="{{ url_for('SiteIndex') }}" class="img_header">
+            <img src="/static/images/Logotipo.png" class="img_clickable"></a>
+        </div>
+        <div class="barra_pesquisa">
+            <form>
+                <input type="text" placeholder="Pesquisar">
+                <button type="submit" class="button_pesquisa"><img src="/static/images/pesquisa.png" alt="lupa" class="lupa_pesquisa"></button>
+            </form>
+        </div>
+        <script src="/static/scripts/JavaScript_Functions.js"></script>
+        {% if 'usuario_nome' in session %}
+            <input type="image" src="/static/images/usercon.png" class="img_header"/>
+        {% else %}
+        <a href="{{ url_for('Login_info') }}" class="img_header">
+            <img src="/static/images/placeholder_user_Ico.png" class="img_clickable"></a>
+        </div>
+        {% endif %}
+    </header>
+
+
+
+    <div class="categ_header_hyperlinks">
+        <a href="{{ url_for('SiteIndex') }}">Página inicial</a>
+        <a href="{{ url_for('Site_noticias') }}">Notícias</a>
+        <a href="">Categorias</a>
+        <a href="">Recomendações</a>
+        <a href="">Fale Conosco</a>
+        <a href="">Quem somos</a>
+    </div>
+
+
+
+
 
 {% block conteudo %}{% endblock %} 
+</div>
 
+
+</body>
 </html>
