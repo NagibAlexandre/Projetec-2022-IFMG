@@ -6,7 +6,8 @@ class Usuario:
 
 lista_usuarios = [
   Usuario('Nagib', 'nagibverly@gmail.com', '123'),
-  Usuario('Natasha', 'natasha@gmail.com', 'abc')
+  Usuario('Natasha', 'natasha@gmail.com', 'abc'),
+  Usuario('Leo','leozinpvp@gmail.com','321')
 ]
 
 dict_usuarios = {usuario.email: usuario for usuario in lista_usuarios}

@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" href="/static/stylesheets/login_style.css">
+</head>
+
+<div class="login_container">
+  <div class="div_form">
+    <img src="/static/images/usercon.png" alt="login">
+    <h1>Login</h1>
+    <form action="{{ url_for('PaginaLogin') }}" method="post">
+      <div class="mb-3">
+        <label for="email" class="form-label"></label>
+        <input id="email" name="email" type="email" class="form-control" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <label for="senha" class="form-label"></label>
+        <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha">
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

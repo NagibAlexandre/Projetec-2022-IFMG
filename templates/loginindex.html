@@ -1,0 +1,9 @@
+{% if 'usuario_nome' in session %}
+  <form action="{{url_for('PaginaLogout')}}">
+    <div> Olá {{ session['usuario_nome']}}</div>
+    <button>Sair</button>
+  </form>
+  {% extends 'loginfo.html' %}
+{% else %}
+  {% extends 'loginpage.html' %}
+{% endif %}

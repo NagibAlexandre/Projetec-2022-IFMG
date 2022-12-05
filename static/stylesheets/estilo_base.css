@@ -31,6 +31,7 @@ h1,p{
     width: 9%;
     max-width: 120px;
     object-fit: cover;
+    border: 1px solid black;
 }
 
 .img_clickable{
@@ -177,3 +178,14 @@ h1,p{
     height: auto;
     padding-right: 100px;
 }
+
+.div2 .Not_button{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.div1{
+    overflow-wrap: break-word;}

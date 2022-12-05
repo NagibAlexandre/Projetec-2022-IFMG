@@ -21,9 +21,9 @@ def PaginaLogin():
       session['usuario_nome'] = usuario.nome
       return redirect(url_for('SiteIndex'))
       
-  return render_template('login.html')
+  return render_template('loginindex.html')
 
-@Site.route('/logout', methods=['POST'])
+@Site.route('/logout', methods=['GET','POST'])
 def PaginaLogout():
   session.pop('usuario_email', None)
   session.pop('usuario_nome', None)
@@ -37,7 +37,9 @@ def Login_info():
 def Site_noticias():
     return render_template('noticias.html', Titulo = 'Noticias')
 
-
+@Site.route('/login')
+def Site_Login():
+    return render_template('loginindex.html', Titulo = 'Login')
 
 # Esse código é para quando for rodar no Replit
 #app.run(host='0.0.0.0', debug=True)

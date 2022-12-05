@@ -23,9 +23,11 @@
         </div>
         <script src="/static/scripts/JavaScript_Functions.js"></script>
         {% if 'usuario_nome' in session %}
-            <input type="image" src="/static/images/usercon.png" class="img_header"/>
+        <a href="{{ url_for('Site_Login') }}" class="img_header">
+            <img src="/static/images/usercon.png" class="img_clickable"></a>
+        </div>
         {% else %}
-        <a href="{{ url_for('Login_info') }}" class="img_header">
+        <a href="{{ url_for('Site_Login') }}" class="img_header">
             <img src="/static/images/placeholder_user_Ico.png" class="img_clickable"></a>
         </div>
         {% endif %}
