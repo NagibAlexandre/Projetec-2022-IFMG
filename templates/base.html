@@ -14,7 +14,6 @@
     <header class="header_index">
         <a href="{{ url_for('SiteIndex') }}" class="img_header">
             <img src="/static/images/Logotipo.png" class="img_clickable"></a>
-        </div>
         <div class="barra_pesquisa">
             <form>
                 <input type="text" placeholder="Pesquisar">
@@ -25,11 +24,9 @@
         {% if 'usuario_nome' in session %}
         <a href="{{ url_for('Site_Login') }}" class="img_header">
             <img src="/static/images/usercon.png" class="img_clickable"></a>
-        </div>
         {% else %}
         <a href="{{ url_for('Site_Login') }}" class="img_header">
             <img src="/static/images/placeholder_user_Ico.png" class="img_clickable"></a>
-        </div>
         {% endif %}
     </header>
 
@@ -38,10 +35,10 @@
     <div class="categ_header_hyperlinks">
         <a href="{{ url_for('SiteIndex') }}">Página inicial</a>
         <a href="{{ url_for('Site_noticias') }}">Notícias</a>
-        <a href="">Categorias</a>
-        <a href="">Recomendações</a>
-        <a href="">Fale Conosco</a>
-        <a href="">Quem somos</a>
+        <a href="{{ url_for('Site_categorias') }}">Categorias</a>
+        <a href="{{ url_for('Site_recomendacoes') }}">Recomendações</a>
+        <a href="{{ url_for('Site_faleconosco') }}">Fale Conosco</a>
+        <a href="{{ url_for('Site_quemsomos') }}">Quem somos</a>
     </div>
 
 
@@ -49,7 +46,7 @@
 
 
 {% block conteudo %}{% endblock %} 
-</div>
+
 
 
 </body>

@@ -119,6 +119,12 @@ h1,p{
 
 
 /* customização da página index */
+.logo_conteudo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .div_conteudo{
     display: block;

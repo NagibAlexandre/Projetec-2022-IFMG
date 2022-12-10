@@ -41,6 +41,23 @@ def Site_noticias():
 def Site_Login():
     return render_template('loginindex.html', Titulo = 'Login')
 
+@Site.route('/categorias')
+def Site_categorias():
+    return render_template('categorias.html', Titulo = 'Categorias')
+
+@Site.route('/faleconosco')
+def Site_faleconosco():
+    return render_template('faleconosco.html', Titulo = 'Fale Conosco')
+
+@Site.route('/recomendacoes')
+def Site_recomendacoes():
+    return render_template('recomendacoes.html', Titulo = 'Recomendacoes')
+
+@Site.route('/quemsomos')
+def Site_quemsomos():
+    return render_template('quemsomos.html', Titulo = 'Quem Somos')
+
+
 # Esse código é para quando for rodar no Replit
 #app.run(host='0.0.0.0', debug=True)
 
