@@ -57,6 +57,31 @@ def Site_recomendacoes():
 def Site_quemsomos():
     return render_template('quemsomos.html', Titulo = 'Quem Somos')
 
+# Sub-sites da página categoria
+
+@Site.route('/categorias/games')
+def SiteCGames():
+    return render_template('/subcategorias/games.html', Titulo= 'Games')
+   
+@Site.route('/categorias/culinaria')
+def SiteCCulinaria():
+    return render_template('/subcategorias/culinaria.html', Titulo= 'Culinaria')
+
+@Site.route('/categorias/conversa')
+def SiteCConversa():
+    return render_template('/subcategorias/conversa.html', Titulo= 'Conversa')
+
+@Site.route('/categorias/artes')
+def SiteCArtes():
+    return render_template('/subcategorias/artes.html', Titulo= 'Artes')
+
+@Site.route('/categorias/musica')
+def SiteCMusica():
+    return render_template('/subcategorias/musica.html', Titulo= 'Musica')
+
+@Site.route('/categorias/esporte')
+def SiteCEsporte():
+    return render_template('/subcategorias/esporte.html', Titulo= 'Esporte"')
 
 # Esse código é para quando for rodar no Replit
 #app.run(host='0.0.0.0', debug=True)

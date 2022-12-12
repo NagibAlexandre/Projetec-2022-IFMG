@@ -251,3 +251,7 @@ h1,p{
     border-radius: 360px;
     
 }
+
+a{
+text-decoration: none;
+color: black;}
