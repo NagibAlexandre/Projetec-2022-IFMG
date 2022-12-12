@@ -5,6 +5,7 @@ body{
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 
 h1,p{
@@ -194,3 +195,32 @@ h1,p{
 
 .div1{
     overflow-wrap: break-word;}
+
+/* Estilo página fale conosco */
+
+.FaleC_container{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 100px;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+.FaleC_input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+}
