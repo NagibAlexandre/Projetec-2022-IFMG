@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    overflow: auto;
+    height: 100%;
+    background-image: url(/static/images/perfil/loginbg.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_container{
+    background-color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+@media (min-height: 1250px)
+{
+    .main_container{
+        height: 100%;
+    }
+}
+
+
+.sub_container_left{
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.middle_container{
+    border-right: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.right_container{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    padding-top: 50px;
+    border-right: 3px solid black;
+}
+
+.img_user{
+    border-radius: 360px;
+    width: 45%;
+    border: 4px solid black;
+    box-shadow: 0 5px 30px white;
+}
+
+.painel_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.subconPainel{
+    border-top: 3px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    border-bottom: transparent;
+}
+
+.painel_darkmode{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subpainel_darkmode{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px ;
+}
+
+.subpainel_darkmode img:hover{
+    cursor: pointer;
+}
+
+.p_darkmode{
+    font-size:calc(10px + 1vw);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.painel_sair{
+    display: flex;
+    align-items: center;
+}
+
+.img_logout{
+    padding-left: 10px;
+}
+
+.p_notif{
+    font-size:calc(10px + 1vw);
+}
+
+.p_darkmode:hover{
+    cursor: default;
+}
+
+.p_return{
+    font-size:calc(10px + 1vw);
+}
+
+.href_Index{
+    text-decoration: none;
+    color: black;
+}
+
+.return_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:calc(10px + 2vw);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1:hover{
+    cursor: default;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p:hover{
+    cursor: default;
+}
+
+/* div do meio*/
+
+.subpanel_midcontainer{
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_streamer{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-bottom: transparent;
+}
+
+.img_streamer{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 360%;
+}
+
+.stramer_container{
+    display: flex;
+    flex-direction: column;
+    font-size:calc(1px + 1vw);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.streamer_button{
+    text-decoration: none;
+    color: black;
+}
+
+.streamer_button:hover{
+    cursor: pointer;
+}
+.subpanel_midcontainer img{
+    border: 2px solid black;
+}

@@ -1,0 +1,106 @@
+<head>
+    <title>Página login</title>
+    <link rel="stylesheet" href="/static/stylesheets/estilo_login_page.css">
+</head>
+
+<body>
+    <div class="main_container">
+        
+        <div class="sub_container_left">
+            <img src="/static/images/usercon.png" alt="userimg" class="img_user">
+            <h1>Olá {{ session['usuario_nome']}}!</h1>
+            <div class="painel_container">
+                
+                <div class="subconPainel painel_darkmode">
+                    <p class="p_darkmode"><b>Escolha o modo de cores:</b></p>
+                    <div class="subpainel_darkmode">
+                        <img src="/static/images/ICO_sun.png" alt="sun">
+                        <img src="/static/images/ICO_moon.png" alt="moon">
+                    </div>
+                </div>
+
+                <div class="subconPainel painel_notification">
+                    <p class="p_notif"><b>Notificações: </b></p>
+
+                </div>
+
+                <div class="subconPainel painel_feedback">
+                    <p class="p_return"><a href="{{url_for('Site_faleconosco')}}" class="href_Index"><b>Feedback: </b></p></a>
+                </div>
+                <div class="subconPainel return_button">
+                    <div><p class="p_return"><b><a href="{{url_for('SiteIndex')}}" class="href_Index">Voltar ao início</b></p> <img src="/static/images/" alt=""></a></div>
+                    <div class="painel_sair"><p class="p_return"><b>Sair</b></p><a href="{{url_for('PaginaLogout')}}" class="img_logout"><img src="/static/images/logout.png" alt="" class="img_logout"></a></div> <!-- colocar icone de casa e continuar o site-->
+                </div>
+            </div> 
+        </div>
+
+
+        <div class="middle_container">
+            <div class="titulo"><h1>Mais assistidos</h1></div>
+            <div class="subpanel_midcontainer">
+
+                <div class="div_streamer">
+                    
+                    <img src="/static/images/perfil/streamer1.png" class="img_streamer">
+                    
+                    <div class="stramer_container">
+                        <b><p>Nome do streamer: Casimito</p></b>
+                        <a href="https://www.twitch.tv/casimito" class="streamer_button"><b>Clique aqui para ir para o canal</b></a>
+                    </div>
+                </div>
+
+                <div class="div_streamer">
+                    
+                    <img src="/static/images/perfil/streamer2.png" class="img_streamer">
+                    
+                    <div class="stramer_container">
+                        <b><p>Nome do streamer: Cellbit</p></b>
+                        <a href="https://www.twitch.tv/cellbit" class="streamer_button"><b>Clique aqui para ir para o canal</b></a>
+                    </div>
+                </div>
+
+                <div class="div_streamer">
+                    
+                    <img src="/static/images/perfil/streamer3.png" class="img_streamer">
+                    
+                    <div class="stramer_container">
+                        <b><p>Nome do streamer: The Game Awards</p></b>
+                        <a href="https://www.twitch.tv/thegameawards" class="streamer_button"><b>Clique aqui para ir para o canal</b></a>
+                    </div>
+                </div>
+
+                <div class="div_streamer">
+                    
+                    <img src="/static/images/perfil/streamer4.png" class="img_streamer">
+                    
+                    <div class="stramer_container">
+                        <b><p>Nome do streamer: Gaules</p></b>
+                        <a href="https://www.twitch.tv/gaules" class="streamer_button"><b>Clique aqui para ir para o canal</b></a>
+                    </div>
+                </div>
+
+                <div class="div_streamer">
+                    
+                    <img src="/static/images/perfil/streamer5.png" class="img_streamer">
+                    
+                    <div class="stramer_container">
+                        <b><p>Nome do streamer: Coringa</p></b>
+                        <a href="https://www.twitch.tv/loud_coringa" class="streamer_button"><b>Clique aqui para ir para o canal</b></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_container">
+            <div class="titulo"><h1>Torne-se VIP</h1></div>
+            <div class="subpanel_midcontainer">
+                <h1>Valor R$20,00</h1>
+                <img src="/static/images/perfil/qrcode.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
