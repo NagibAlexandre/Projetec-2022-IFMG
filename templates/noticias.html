@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block conteudo%}
+<script>
+    function DetectarEstado(IdDiv){
+        noticias = document.getElementById("painel-noticias").children
+        
+        for (let noticia of noticias) {
+
+            if(noticia === IdDiv){
+                noticia.classList.add("active")
+                
+            } else{
+                noticia.classList.remove("active")
+            }
+        }
+        return false;
+    }
+</script>
+<div class="parent">
+    <div id="painel-noticias" class="div1"> 
+        <p class="p_noticia active" id="Not_1"> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p> 
+        <p class="p_noticia" id="Not_2"> bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb </p> 
+        <p class="p_noticia" id="Not_3"> ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc </p> 
+        <p class="p_noticia" id="Not_4"> ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd </p> 
+        <p class="p_noticia" id="Not_5"> eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee </p>
+    </div>
+    <div class="subdiv div2"> <a href="" onclick="return DetectarEstado(Not_1)"> <img src="/static/images/noticias/noticia1.png" class="img_noticia"> </a> </div>
+    <div class="subdiv div3"> <a href="" onclick="return DetectarEstado(Not_2)"> <img src="/static/images/noticias/noticia2.png" alt="a" class="img_noticia"> </a></div>
+    <div class="subdiv div4"> <a href="" onclick="return DetectarEstado(Not_3)"> <img src="/static/images/noticias/noticia3.png" alt="a" class="img_noticia"> </a></div>
+    <div class="subdiv div5"> <a href="" onclick="return DetectarEstado(Not_4)"> <img src="/static/images/noticias/noticia4.png" alt="a" class="img_noticia"> </a></div>
+    <div class="subdiv div6"> <a href="" onclick="return DetectarEstado(Not_5)"> <img src="/static/images/noticias/noticia5.png" alt="a" class="img_noticia"> </a></div>
+</div>
+{% endblock %} 

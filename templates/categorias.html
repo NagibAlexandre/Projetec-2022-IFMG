@@ -1,0 +1,23 @@
+{% extends 'categoria_base.html' %}
+
+{% block conteudo%}
+<div class="main_div_categorias">
+    <div class="categoria_subdiv">
+        <div class="item"><a href="{{ url_for('SiteCGames') }}"><img src="/static/images/categorias/games.jpg" class="img_categoria"><p> Jogos Eletrônicos</p></a></div>
+
+        <div class="item"><a href="{{ url_for('SiteCCulinaria') }}"><img src="/static/images/categorias/culinaria.jpg" class="img_categoria"><p> Culinária</p></a></div>
+    </div>
+
+    <div class="categoria_subdiv">
+        <div class="item"><a href="{{ url_for('SiteCConversa') }}"><img src="/static/images/categorias/conversa.jpg" class="img_categoria"><p> Conversa</p></a></div>
+
+        <div class="item"><a href="{{ url_for('SiteCEsporte') }}"><img src="/static/images/categorias/futebol.jpg" class="img_categoria"><p> Futebol e outros esportes</p></a></div>
+    </div>
+
+    <div class="categoria_subdiv">
+        <div class="item"><a href="{{ url_for('SiteCArtes') }}"><img src="/static/images/categorias/arte.jpg" class="img_categoria"><p> Artes</p></a></div>
+
+        <div class="item"><a href="{{ url_for('SiteCMusica') }}"><img src="/static/images/categorias/musica.jpg" class="img_categoria"><p> Música</p></a></div>
+    </div>
+</div>
+{% endblock %} 

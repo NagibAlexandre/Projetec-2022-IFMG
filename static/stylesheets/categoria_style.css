@@ -1,0 +1,257 @@
+body{
+    overflow: auto;
+    margin:0;
+    background-image: url(/static/images/wllpp.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* customização do header do html base ^-^ */
+
+.header_index{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 15%;
+    align-items: center;
+    background-color: #1E2940;
+    min-height: 10%;
+    font-size: 300%;
+    width: 140%; /**/
+    height: auto;
+    padding: 10px;
+    
+}
+
+.img_header{
+    border-radius: 100%;
+    width: 9%;
+    max-width: 120px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.img_clickable{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 100%;
+}
+
+.barra_pesquisa form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.barra_pesquisa {
+    height: auto;
+    width: auto;
+}
+
+.barra_pesquisa input{
+    width: 25vw;
+    min-height: 2vw;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.button_pesquisa{
+    cursor: pointer;
+    background-color: #465370;
+    border: 1px solid black;
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.lupa_pesquisa{
+    width: 25%;
+}
+
+/* customização dos hyperlinks imediatamente abaixo do header */
+
+.categ_header_hyperlinks{
+    display: flex;
+    background-color: #465370;
+    height: 5%;
+    width: 144.8%; /**/
+    min-height: 40px;
+    align-items: center;
+}
+
+.categ_header_hyperlinks a {
+    display: block;
+    width: 100%;
+    height: 75%;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:calc(6px + 1vw);
+    color: black;
+    padding-top: 10px;
+}
+
+
+.categ_header_hyperlinks a:hover {
+    background-color: rgba(20, 20, 20, 0.158);
+}
+
+/* customização do div conteúdo presente no base.html */
+
+.div_conteudo{
+    display: flex;
+    justify-content: center;
+    width: 66.6%;
+    margin: auto;
+    height: auto;
+    background-image: linear-gradient(#1e2339e8,#5b6777ea);
+    color: white;
+    position: relative;
+    top: 5%;
+    border: 1px solid black;
+}
+
+
+/* customização da página index */
+.logo_conteudo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.div_conteudo{
+    display: block;
+    overflow: hidden;
+}
+
+.div_conteudo h1{
+    font-size: 3vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo_conteudo{
+    width: 38%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.div_conteudo p{
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Customização da pag noticias */
+
+.parent {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    color: black;
+    text-align: center;
+    height: auto;
+}
+
+.subdiv{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.div1 { grid-area: 1 / 1 / 6 / 5; background-color: aliceblue; border: 1px solid black;}
+.div2 { grid-area: 1 / 5 / 2 / 6;}
+.div3 { grid-area: 2 / 5 / 3 / 6;}
+.div4 { grid-area: 3 / 5 / 4 / 6;}
+.div5 { grid-area: 4 / 5 / 5 / 6;}
+.div6 { grid-area: 5 / 5 / 6 / 6;}
+
+.img_noticia{
+    max-width:100%;
+    height: auto;
+    padding-right: 100px;
+}
+
+.div2 .Not_button{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+.div1{
+    overflow-wrap: break-word;}
+
+/* Customização página categorias*/
+
+.main_div_categorias{
+    display: flex;
+    min-height: 750px;
+    min-width: auto;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 100px;
+
+}
+
+.categoria_subdiv{
+    display: flex;
+    column-gap: 100px;
+    flex: 1;
+}
+
+.item {
+    background-color: rgb(228, 228, 228);
+    border: 5px solid black;
+    border-radius: 60px;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    font-size:calc(6px + 1vw);
+  }
+
+.item:hover{
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+}
+
+@media (min-width: 730px)
+{   
+    body{
+        overflow-x:hidden;
+    }
+
+    .header_index{
+        width: 100%;
+    }
+
+    .categ_header_hyperlinks{
+        width: 101%;
+    }
+}
+
+.img_categoria{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 360px;
+    
+}
+
+a{
+text-decoration: none;
+color: black;}

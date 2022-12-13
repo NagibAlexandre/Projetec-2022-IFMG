@@ -1,0 +1,5 @@
+{% if 'usuario_nome' in session %}
+  {% extends 'loginfo.html' %}
+{% else %}
+  {% extends 'loginpage.html' %}
+{% endif %}
