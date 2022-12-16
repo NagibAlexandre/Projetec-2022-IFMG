@@ -12,11 +12,9 @@
 <body>
 
     <!DOCTYPE html>
-    <!-- Created By CodingNepal - www.codingnepalweb.com -->
     <html lang="en" dir="ltr">
       <head>
         <meta charset="UTF-8">
-       <!---- <title> Responsive Contact Us Form | CodingLab </title>--->
         <link rel="stylesheet" href="style.css">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
        </head>
@@ -24,7 +22,7 @@
       <div class="container">
         <div class="content">
           <div class="imagem-box">
-           <img src="/static/images/email.gif">
+           <a href="{{ url_for('SiteIndex') }}"><img src="/static/images/email.gif"></a> 
           </div>
         <form action="mailto:nagibverly@gmail.com" method="post" enctype="text/plain">
           <div class="topic">Nos envie uma mensagem</div>
