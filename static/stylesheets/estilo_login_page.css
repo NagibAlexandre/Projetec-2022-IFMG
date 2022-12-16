@@ -78,29 +78,7 @@ body{
     border-bottom: transparent;
 }
 
-.painel_darkmode{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-.subpainel_darkmode{
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 20px ;
-}
-
-.subpainel_darkmode img:hover{
-    cursor: pointer;
-}
-
-.p_darkmode{
-    font-size:calc(10px + 1vw);
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-
-}
 
 .painel_sair{
     display: flex;
@@ -111,9 +89,6 @@ body{
     padding-left: 10px;
 }
 
-.p_notif{
-    font-size:calc(10px + 1vw);
-}
 
 .p_darkmode:hover{
     cursor: default;
